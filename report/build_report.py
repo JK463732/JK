@@ -288,7 +288,7 @@ def build_body(doc: Document):
         para(doc, r, size=10.5, indent=False, space_after=4)
 
     heading(doc, "八、附录", 1)
-    para(doc, "按课程要求，附录列出主要代码（附A）、运行方法（附B）、依赖清单（附C）、测试样例（附D）与复用组件清单及许可证来源说明（附E）。完整项目代码随报告一并提交，目录结构如下：", size=10.5)
+    para(doc, "按课程要求，附录列出主要代码（附A）、运行方法（附B）、依赖清单（附C）、测试样例（附D）与复用组件清单及许可证来源说明（附E）。完整项目代码已公开于 GitHub 仓库：https://github.com/JK463732/JK （含演示材料），并随报告一并提交，目录结构如下：", size=10.5)
     code_block(doc, [
         "影荐Agent/",
         "├── README.md                  项目说明（含目录结构与复现步骤）",
@@ -365,7 +365,7 @@ def build_body(doc: Document):
     ], size=9)
 
     heading(doc, "附录B 运行方法", 2)
-    para(doc, "环境：Python ≥ 3.10（开发环境 Python 3.15 / scikit-learn 1.9 / pandas 3.1，Windows）。依次执行以下命令：安装依赖；复现全部实验（约3–5分钟，生成 experiments/results/*.csv 与 report/figures/fig1–fig6.png）；运行演示（生成两个会话记录与终端截图）；交互式体验 Agent；由封面模板与实验结果重新生成本报告 docx。", size=10.5)
+    para(doc, "在线仓库（含全部代码、实验结果与演示材料）：https://github.com/JK463732/JK 。环境：Python ≥ 3.10（开发环境 Python 3.15 / scikit-learn 1.9 / pandas 3.1，Windows）。依次执行以下命令：安装依赖；复现全部实验（约3–5分钟，生成 experiments/results/*.csv 与 report/figures/fig1–fig6.png）；运行演示（生成两个会话记录与终端截图）；交互式体验 Agent；由封面模板与实验结果重新生成本报告 docx。", size=10.5)
     code_block(doc, [
         "pip install -r requirements.txt",
         "python experiments/run_experiments.py",
