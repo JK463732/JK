@@ -311,7 +311,7 @@ def build_body(doc: Document):
     ], size=9)
 
     heading(doc, "附录A 主要代码", 2)
-    para(doc, "以下摘录四个核心模块的关键实现（完整代码见随报告提交的代码仓库）。", size=10.5)
+    para(doc, "以下摘录四个核心模块的关键实现。完整代码与演示材料已公开于 GitHub 仓库：https://github.com/JK463732/JK ，并随报告一并提交。", size=10.5)
     para(doc, "A.1 数据划分——按时间的留一法（src/data_loader.py，防泄漏版本）", size=10.5, indent=False, bold=True)
     code_block(doc, [
         "def split(self, like_threshold=4.0):",
@@ -365,7 +365,7 @@ def build_body(doc: Document):
     ], size=9)
 
     heading(doc, "附录B 运行方法", 2)
-    para(doc, "在线仓库（含全部代码、实验结果与演示材料）：https://github.com/JK463732/JK 。环境：Python ≥ 3.10（开发环境 Python 3.15 / scikit-learn 1.9 / pandas 3.1，Windows）。依次执行以下命令：安装依赖；复现全部实验（约3–5分钟，生成 experiments/results/*.csv 与 report/figures/fig1–fig6.png）；运行演示（生成两个会话记录与终端截图）；交互式体验 Agent；由封面模板与实验结果重新生成本报告 docx。", size=10.5)
+    para(doc, "环境：Python ≥ 3.10（开发环境 Python 3.15 / scikit-learn 1.9 / pandas 3.1，Windows）。依次执行以下命令：安装依赖；复现全部实验（约3–5分钟，生成 experiments/results/*.csv 与 report/figures/fig1–fig6.png）；运行演示（生成两个会话记录与终端截图）；交互式体验 Agent；由封面模板与实验结果重新生成本报告 docx。", size=10.5)
     code_block(doc, [
         "pip install -r requirements.txt",
         "python experiments/run_experiments.py",
